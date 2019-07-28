@@ -1,0 +1,43 @@
+{{>header}}
+
+<style type="text/css">
+.form-dark{
+	color: #fff;
+	background-color: #343a40;
+	height: 50px;
+}
+
+.form-padi{
+	padding-top: 10px;
+}
+</style>
+
+<div class="jumbotron">
+	<div class="container">
+		<header>
+			<h1>{{curso.nombre}}</h1>
+			<p> Bienvenido al curso de {{curso.nombre}} que tiene las siguientes caracteristcas: </p> <br>
+			<p> Valor : {{curso.valor}}</p> <br>
+			<p> Intensidad Horaria : {{curso.intensidad}}</p> <br>
+			<p> Modalidad : {{curso.modalidad}}</p> <br>
+			<p> Descripcion : {{curso.descripcion}}</p> <br>
+		</header>
+	</div>
+</div> 
+
+<div>
+	<p>El curso sera dictado por el siguiente profesor:</p> <br>
+	{{{ListarInscritosCurso docentes}}}
+
+	<br>
+	<br>
+
+	<p>en el curso estan inscritos los siguientes estudiantes: </p> <br>
+	{{{ListarInscritosCurso usuarios}}}
+</div>
+
+
+
+
+
+{{>footer}}
